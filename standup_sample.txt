@@ -1,0 +1,58 @@
+Daily Standup - Monday, March 3rd
+==================================
+
+Participants: Arjun, Priya, Ravi, Sneha, Karan
+
+--- Arjun (Backend) ---
+Yesterday: Finished the JWT auth implementation, pushed to feature/auth branch. PR is open.
+Today: Will start working on the payment gateway integration.
+Blockers: Waiting for the Stripe API keys from DevOps. Without these, I can't progress on payments.
+
+--- Priya (Frontend) ---
+Yesterday: Fixed the login page responsiveness issues on mobile.
+Today: Will pick up the dashboard UI tickets (UI-234, UI-235).
+Blockers: None
+
+--- Ravi (DevOps) ---
+Yesterday: Set up staging environment, had some SSL cert issues, still pending.
+Today: Resolve the SSL issue, then push Stripe keys to AWS Secrets Manager.
+Blockers: SSL cert renewal is stuck in approval with IT Security team. ETA unknown.
+
+--- Sneha (QA) ---
+Yesterday: Wrote test cases for auth flow.
+Today: Will begin regression testing for v2.1 release.
+Blockers: Can't complete regression tests without the staging environment being stable. Depends on Ravi's SSL fix.
+
+--- Karan (Product) ---
+Yesterday: Had sync with client about v2.1 requirements. They want push notifications added.
+Today: Will document push notification requirements, add to backlog.
+Blockers: None. But flagging that push notifications may scope creep into this sprint.
+
+==================================
+Daily Standup - Tuesday, March 4th
+==================================
+
+--- Arjun ---
+Yesterday: Worked on payment integration docs while waiting for keys.
+Today: Stripe keys received! Will begin integration today.
+Blockers: None
+
+--- Priya ---
+Yesterday: Completed UI-234 (dashboard header), started UI-235.
+Today: Finish UI-235, start UI-236 if time permits.
+Blockers: Design handoff for the notification bell icon is missing. Waiting on design team.
+
+--- Ravi ---
+Yesterday: SSL still pending, escalated to IT Security.
+Today: Follow up with IT Security, set up CI/CD pipeline for staging.
+Blockers: IT Security SLA is 48 hours, might slip to tomorrow.
+
+--- Sneha ---
+Yesterday: Completed test cases for auth. Found 2 bugs - AUTH-12, AUTH-13.
+Today: Bug verification, continue regression plan.
+Blockers: AUTH-12 and AUTH-13 need dev fix before full regression can proceed.
+
+--- Karan ---
+Yesterday: Push notification spec written up, added 4 new Jira tickets.
+Today: Backlog grooming session at 3pm. 
+Blockers: Sprint capacity concern - team is already at 80% load with current tickets.

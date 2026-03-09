@@ -1,0 +1,72 @@
+JIRA TICKET UPDATES - Sprint 14 (Week of March 3-7)
+====================================================
+
+TICKET: BE-101
+Title: Implement JWT Authentication
+Status: IN REVIEW → DONE
+Assignee: Arjun Sharma
+Story Points: 5
+Update: PR merged after 2 rounds of review. Auth middleware now in prod branch.
+
+TICKET: BE-102  
+Title: Payment Gateway Integration (Stripe)
+Status: TO DO → IN PROGRESS
+Assignee: Arjun Sharma
+Story Points: 8
+Update: Started after receiving Stripe API keys on March 4. Estimated completion: March 7.
+Comment (Arjun): "Stripe webhook setup is more complex than estimated. May need +1 day."
+
+TICKET: UI-234
+Title: Dashboard Header Redesign
+Status: IN PROGRESS → DONE
+Assignee: Priya Nair
+Story Points: 3
+Update: Completed, deployed to staging.
+
+TICKET: UI-235
+Title: Dashboard Analytics Widgets
+Status: IN PROGRESS
+Assignee: Priya Nair
+Story Points: 5
+Update: 70% complete. Blocked on notification icon design asset.
+Comment (Priya): "Pinged design team twice. No response yet. This is becoming a blocker."
+
+TICKET: INFRA-55
+Title: SSL Certificate Renewal - Staging
+Status: BLOCKED
+Assignee: Ravi Kumar
+Story Points: 2
+Update: Escalated to IT Security on March 3. Still awaiting approval.
+Comment (Ravi): "If not resolved by EOD March 5, staging release will slip."
+
+TICKET: QA-88
+Title: Regression Testing v2.1
+Status: IN PROGRESS
+Assignee: Sneha Patel
+Story Points: 5
+Update: Blocked on AUTH-12 and AUTH-13 bug fixes + stable staging env.
+Comment (Sneha): "At risk. We have 2 blockers and only 3 days before release."
+
+TICKET: AUTH-12
+Title: Login fails with special characters in password
+Status: OPEN
+Assignee: Unassigned
+Priority: HIGH
+Reporter: Sneha Patel
+Story Points: 2
+
+TICKET: AUTH-13
+Title: Session token not invalidated on logout (security issue)
+Status: OPEN
+Assignee: Unassigned
+Priority: CRITICAL
+Reporter: Sneha Patel
+Story Points: 3
+Comment (Karan): "AUTH-13 is a security vulnerability. Must be fixed before release. Cannot ship without this."
+
+TICKET: PROD-21
+Title: Push Notification Feature
+Status: BACKLOG
+Assignee: Unassigned
+Story Points: 13
+Comment (Karan): "Client request from March 3 meeting. Added to backlog. Should NOT be in current sprint."
